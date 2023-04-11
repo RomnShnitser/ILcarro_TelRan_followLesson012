@@ -1,9 +1,0 @@
-23:22:10 INFO  TestBase || 
- START :: addNewCarPositiveTest
-23:22:10 INFO  TestBase || - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-23:22:28 INFO  TestBase || Successfully added new car with: Car(address=Tel Aviv, make=KIA, model=Sportage, year=2020, fuel=Petrol, seats=4, carClass=5, carRegNumber=100-200-1334, price=150)
-23:22:30 INFO  TestBase || - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-23:22:30 INFO  TestBase ||  ENDED :: addNewCarPositiveTest
-23:22:30 INFO  TestBase || 
-23:22:30 INFO  TestBase || ============================================================================
-

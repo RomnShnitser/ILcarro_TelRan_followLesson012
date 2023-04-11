@@ -24,14 +24,15 @@ public class TestBase {
 
 	//Logger
 	@BeforeMethod
-	public void startTest(Method method) {
-		logger.info(" START :: " + method.getName());
-		logger.info("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ");
+	public void startTest (Method method) {
+		logger.info("TEST STARTED :: " + method.getName());
+		logger.info("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ");
 	}
+
 	@AfterMethod
-	public void stopTest(Method method) {
-		logger.info("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ");
-		logger.info(" ENDED :: " + method.getName());
-		logger.info(""); logger.info("========================================================================================================================================================\n\n");
+	public void stopTest (Method method) {
+		logger.info("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ");
+		logger.info("TEST ENDED :: " + method.getName());
+		logger.info("\n================================================================================================================================\n\n");
 	}
 }

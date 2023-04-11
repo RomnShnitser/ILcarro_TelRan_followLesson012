@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class HelperCar extends HelperBase {
+public class HelperCar extends Helper_Base {
 	public HelperCar (WebDriver wd) {
 		super(wd);
 	}
@@ -44,7 +44,8 @@ public class HelperCar extends HelperBase {
 		type(By.id("year"), car.getYear());
 		select(By.id("fuel"), car.getFuel());
 		type(By.id("seats"), car.getSeats());
-		type(By.id("class"), car.getCarClass());
+		//type(By.id("class"), car.getCarClass());
+		type(By.id("classs"), car.getCarClass());
 		type(By.id("serialNumber"), car.getCarRegNumber());
 		type(By.id("price"), car.getPrice());
 

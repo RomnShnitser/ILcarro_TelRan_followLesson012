@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class HelperUser extends HelperBase {
+public class HelperUser extends Helper_Base {
 
 	public HelperUser (WebDriver wd) {
 		super(wd);

@@ -1,13 +1,15 @@
 package manager;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import com.google.common.io.Files;
+import org.openqa.selenium.*;
 
-public class HelperBase {
+import java.io.File;
+import java.io.IOException;
+
+public class Helper_Base {
 	WebDriver wd;
 
-	public HelperBase (WebDriver wd) {
+	public Helper_Base (WebDriver wd) {
 		this.wd = wd;
 	}
 
@@ -47,4 +49,16 @@ public class HelperBase {
 	public void goHome () {
 		mouseClick(By.cssSelector("a.logo"));
 	}
+
+	public void takesScreenshot (String link) {
+		//File (java.io); Files (com.google.common.io)
+		File tmp = ((TakesScreenshot)wd).getScreenshotAs(OutputType.FILE);
+		File screenshot = new File(link);
+		try {
+			Files.copy(tmp, screenshot);
+		} catch(IOException e) {
+			e.printStackTrace();
+		}
+	}
+
 }
